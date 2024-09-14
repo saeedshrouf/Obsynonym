@@ -72,9 +72,7 @@ export default class MyPlugin extends Plugin {
 		await this.saveData(this.settings);
 	}
 
-	onunload() {
-		// Cleanup code if needed
-	}
+	onunload() {}
 }
 
 class SynonymModal extends Modal {
@@ -113,7 +111,6 @@ class SynonymModal extends Modal {
 	}
 }
 
-// Optionally, keep or update your SampleSettingTab and SampleModal classes
 class SampleSettingTab extends PluginSettingTab {
 	plugin: MyPlugin;
 
