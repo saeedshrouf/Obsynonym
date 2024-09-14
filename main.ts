@@ -22,11 +22,6 @@ export default class MyPlugin extends Plugin {
 
 	async onload() {
 		await this.loadSettings();
-
-		// Existing sample code (optional to keep)
-		// ...
-
-		// Add the synonym suggestion command
 		this.addCommand({
 			id: "suggest-synonyms",
 			name: "Suggest Synonyms",
@@ -39,9 +34,6 @@ export default class MyPlugin extends Plugin {
 				}
 			},
 		});
-
-		// Any other initialization code
-		// ...
 	}
 
 	async suggestSynonyms(word: string, editor: Editor) {
@@ -68,7 +60,6 @@ export default class MyPlugin extends Plugin {
 		return data.map((item: any) => item.word);
 	}
 
-	// Existing methods for settings, unloading, etc.
 	async loadSettings() {
 		this.settings = Object.assign(
 			{},
@@ -86,7 +77,6 @@ export default class MyPlugin extends Plugin {
 	}
 }
 
-// SynonymModal class outside the plugin class
 class SynonymModal extends Modal {
 	synonyms: string[];
 	onChoose: (synonym: string) => void;
