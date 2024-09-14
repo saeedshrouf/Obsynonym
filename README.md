@@ -1,6 +1,6 @@
-# Obsidian Sample Plugin
+# Obsynonym
 
-This is a sample plugin for Obsidian (https://obsidian.md).
+This is a custom plugin built for generating context-based synonyms for [Obsidian](https://obsidian.md).
 
 This project uses TypeScript to provide type checking and documentation.
 The repo depends on the latest plugin API (obsidian.d.ts) in TypeScript Definition format, which contains TSDoc comments describing what it does.
